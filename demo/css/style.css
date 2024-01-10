@@ -1,0 +1,783 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+
+/* =============================================================================
+   CSS 
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #101112;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+ 
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #ffffff;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+/* ---- particles.js container-- */
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: #101112;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* =============================================================================
+
+========================================================================== */
+.masthead {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.masthead h1,
+.masthead .h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 90px;
+  /* or 110% */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #2d9ee0 0%, #2f80ed 50%, #4333ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-emphasis-color: transparent;
+}
+.masthead h2,
+.masthead .h2 {
+  font-family: "Cambria";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  /* or 136% */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+.ms-auto {
+  margin-left: auto;
+}
+
+.nav-link {
+  display: block;
+  color: #101112;
+  text-decoration: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+abbr[title],
+abbr[data-bs-original-title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
+#nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+}
+
+#nav .logo {
+  margin-left: 170px;
+}
+
+#nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav ul li {
+  margin: 15px;
+}
+
+#nav ul li a {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  list-style: no;
+}
+
+#nav ul li:last-child {
+  margin-right: 170px;
+}
+
+.visible {
+  color: #1e1e1e;
+  background-color: #ffffff;
+  position: fixed;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+#mainNav {
+  min-height: 3.5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #64a19d;
+  border: 1px solid #64a19d;
+}
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+#mainNav .navbar-brand {
+  color: #000;
+  font-weight: 700;
+  padding: 0.9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: 0.5rem 0;
+    color: rgb(255, 255, 255);
+  }
+  #mainNav .nav-link {
+    transition: none;
+    color: rgb(255, 255, 255);
+  }
+  #mainNav .nav-link:hover {
+    color: rgb(255, 255, 255);
+  }
+  #mainNav .nav-link:active {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #000;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: #000;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #101212;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #467370;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #64a19d;
+    outline: none;
+    border-bottom: 0.25rem solid #64a19d;
+  }
+}
+
+/*
+*
+* Sections
+*/
+.section-xs {
+  padding: 30px 0;
+}
+
+.section-sm {
+  padding: 35px 0;
+}
+
+.section-sm.section-first {
+  padding-top: 65px;
+}
+
+.section-sm.section-last {
+  padding-bottom: 80px;
+}
+
+.section-md,
+.section-lg,
+.section-xl {
+  padding: 25px 0;
+  z-index: 1;
+}
+
+.section-1 {
+  padding: 40px 0;
+}
+
+.section-collapse + .section-collapse {
+  padding-top: 0;
+}
+
+.section-collapse:last-child {
+  padding-bottom: 0;
+}
+
+html [class*="section-"].section-bottom-0 {
+  padding-bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .section-xs {
+    padding: 40px 0;
+  }
+}
+
+/**
+* Backgrounds
+*/
+
+.bg-azul {
+  background: linear-gradient(90deg, #2d9ee0 0%, #2f80ed 50%, #4333ff 100%);
+}
+
+.bg-branco {
+  background-color: white !important;
+}
+
+.bg-preto {
+  background-color: #101112;
+}
+
+/*
+*
+* Boxes
+*/
+
+.box {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-SubT {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 20px;
+  /* identical to box height, or 56% */
+
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.text-SubT-SobreNos {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 20px;
+  /* identical to box height, or 56% */
+
+  letter-spacing: 1px;
+}
+
+.risco {
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, #2d9ee0 0%, #2f80ed 50%, #4333ff 100%);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.colorblue{
+  background: linear-gradient(90deg, #2d9ee0 0%, #2f80ed 50%, #4333ff 100%);
+
+}
+
+.riscoSobre {
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(90deg, #2d9ee0 0%, #2f80ed 50%, #4333ff 100%);
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+
+.container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.white {
+  background: linear-gradient(
+    90deg,
+    rgba(236, 233, 230, 1),
+    rgba(255, 255, 255, 1)
+  );
+}
+
+.boxicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card {
+ margin-top: 0px;
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 270px;
+  background-color: transparent;
+  border: transparent;
+
+}
+
+.h2 {
+  font-family: "Cambria";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.h3 {
+  font-family: "Cambria";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+}
+.h4 {
+  font-family: "Cambria";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.h4p {
+  font-family: "Cambria";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+}
+
+.h5 {
+  font-family: "Cambria";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.h6 {
+  font-family: "Cambria";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
+
+}
+
+.card-grup {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+ 
+}
+
+#differentials {
+  height: 45vh;
+}
+
+.sobrenos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.imgSobreNos {
+  width: 600px;
+  justify-content: left;
+  margin-right: 20px;
+}
+
+.imgBox {
+  width: 200px;
+  display: inline-block;
+  
+}
+
+.form {
+  width: 100%;
+  font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: #09d;
+  box-shadow: 0 0 0 3px #4dc8ff;
+}
+
+.form button {
+  display: block;
+  padding: 1rem;
+  background: black;
+  color: white;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.Onda {
+  width: 100%;
+  position: relative;
+  top: 10px;
+  background-color: #101112;
+  z-index: -1;
+}
+
+.Onda-down {
+  width: 100%;
+  position: relative;
+  bottom: 10px;
+  background-color: #101112;
+  z-index: -1;
+}
+
+img {
+  width: 100%;
+}
+
+#about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.top-div {
+  position: relative;
+  top: -15px;
+}
+
+.top-div2 {
+  position: relative;
+  top: -20px;
+}
+
+.top-div3 {
+  position: relative;
+  top: -25px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.ntimg{
+ margin-left: 25px;
+margin-right: 25px;
+}
+
